@@ -29,7 +29,7 @@ Source the file drugbank.R (with the working directory set to the directory cont
 ### drugbankMarketing.R
 This file contains a function, getMarketingDetails that requires two arguments: 
   * inputfile: the name of a csv file with a column named drugName that lists all the drugs for which you are interested in obtaining drug marketing details. The file can contain other columns, but the only required column in drugName. This file must be in the current working directory.
-  * outputfile: the name you would like to give the file this function generates
+  * outputfile: the base name you would like to give the file this function generates (do not include an extension; the base file name will be appended with the current date and ".csv")
 The output of the function is a csv spreadsheet with one row per drug listed in the input file. For each drug listed in the input file, the output file has the following details:
   * the date the drug was first marketed in the US, or Canada if no US marketing data
   * the country (US, or Canada only if no US marketing data)
