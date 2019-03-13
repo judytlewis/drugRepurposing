@@ -5,12 +5,12 @@ R scripts to extract details from drugbank.ca detailed drug XML database
 ## Getting started
 Visit the website drugbank.ca, create a user account, and select the Downloads tab at the top of the page. Click the "Download (XML)" button to download the full drugbank database to your computer. This file will be in a zipped format. Create a new directory on your computer and extract the database (which will be named "full database.xml") to that directory. Open R and set your working directory to the directory where you stored the "full database.xml" file. 
 
-For drugbankRepurposing.R, install the following R packages: XML and plyr 
+For drugbank.R, install the following R packages: XML and plyr 
 For drugbankMarketing.R, install the following R packages: XML. plyr, tidyyverse, dplyr
 
 ## R Scripts
 
-### drugbankRepurposing.R
+### drugbank.R
 Source the file drugbank.R (with the working directory set to the directory containing the unzipped "full database.xml" file). As the script runs, the names of the drugs in the drugbank database will scroll by on the console as details about each drug are extracted from the database. Due to the large number of drugs included in the database, this process takes over 30 minutes. When the script is complete, it creates a new spreadsheet named "drugBankDatayyyy-mm-dd.csv" where yyyy-mm-dd is the current date. For each drug in the database, this spreadsheets lists the following details:
   * type (small molecule, biotech...)
   * status (approved, illicit, investigational,...)
