@@ -96,18 +96,18 @@ getMarketingDetails <- function(inputfile, outputfile){
   write_csv(marketingDrugData, filename)
 }
 
-
+# Example use of getMarketingDetails:
 # ApprovedDrugsSheet contains a list of approved drugs of interest
 # This list was determined by Drug Repurposing investigators
 # The column heading of drug names is drugName
 
 
-getMarketingDetails("ApprovedDrugsSheet.csv", outputfile = "approvedDrugsMarketing")
+#getMarketingDetails("ApprovedDrugsSheet.csv", outputfile = "approvedDrugsMarketing")
 
 # Investigators identified another list of drugs of interest, listed in the file
 # targetpairs_MarketingStartSheet.csv
 # The drug name column heading is drugName
 
-getMarketingDetails("targetpairs_MarketingStartSheet.csv", outputfile = "targetPairsMarketing")
+#getMarketingDetails("targetpairs_MarketingStartSheet.csv", outputfile = "targetPairsMarketing")
 
 
