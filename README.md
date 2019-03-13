@@ -3,7 +3,7 @@
 R scripts to extract details from drugbank.ca detailed drug XML database
 
 ## Getting started
-Visit the website drugbank.ca, create a user account, and select the Downloads tab at the top of the page. Click the "Download (XML)" button to download the full drugbank database to your computer. This file will be in a zipped format. Create a new directory on your computer and extract the database (which will be named "full database.xml") to that directory. Open R and set your working directory to the same directory. 
+Visit the website drugbank.ca, create a user account, and select the Downloads tab at the top of the page. Click the "Download (XML)" button to download the full drugbank database to your computer. This file will be in a zipped format. Create a new directory on your computer and extract the database (which will be named "full database.xml") to that directory. Open R and set your working directory to the directory where you stored the "full database.xml" file. 
 
 For drugbankRepurposing.R, install the following R packages: XML and plyr 
 For drugbankMarketing.R, install the following R packages: XML. plyr, tidyyverse, dplyr
