@@ -7,13 +7,16 @@
 # for drug repurposing research.
 #
 # First visit drugbank.ca, create an account, select the Downloads tab
-# and click "Complete Database" to download the full XML file of drug information. 
-# When you run this R code, make sure the file is entitled "full database.xml" and
+# and click "Download (XML)" to download the full XML file of drug information. 
+# Unzip the file and make sure that the resulting file, "full database.xml",
 # is in your working directory.
 
 
 library(XML)
 library(plyr)
+
+# set up the spreadsheet with enough columns for the maximum possible number of drug targets
+# as of Feb 2018, no drug has more than 25 targets
 maxNumberOfTargets <- 25
 targetRelatedColumnNames <- paste(c("target","action","geneName"),
                                   unlist(lapply(1:maxNumberOfTargets,function(x){rep(x,3)})), sep = "")
